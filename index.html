@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="id" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Temukan Film Favoritmu — Sinempak</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css?v=5" />
+
+    <link href="assets/css/fonts.css?v=6" rel="stylesheet" />
+  </head>
+
+  <body class="halaman-beranda d-flex flex-column min-vh-100">
+
+    <header class="bg-1 border-bottom">
+      <nav
+        class="container-fluid px-7 lg:px-12 py-5 d-flex align-items-center justify-content-between"
+        aria-label="Navigasi utama"
+      >
+        <a
+          class="logo-situs text-xl fw-bold fg-body text-decoration-none"
+          href="index.html"
+          >Sinempak<span class="fg-primary">.</span></a
+        >
+
+        <div class="d-flex align-items-center gap-3">
+          <a class="btn-text theme-secondary" href="login.php">Masuk</a>
+
+          <a class="btn-solid theme-primary" href="register.php">Daftar</a>
+        </div>
+      </nav>
+    </header>
+
+    <main
+      class="container-fluid px-7 lg:px-12 py-12 flex-grow-1 d-flex flex-column justify-content-center"
+    >
+      <section class="row align-items-center g-12" aria-labelledby="hero-title">
+        <div class="col-12 lg:col-6">
+          <h1 class="text-5xl fw-bold mb-7" id="hero-title">
+            Temukan Film<br /><span class="fg-primary">Favoritmu.</span>
+          </h1>
+
+          <p class="teks-beranda font-semibold text-lg fg-2 mb-9">
+            Jelajahi film menarik, temukan tontonan berikutnya, dan bagikan
+            pendapatmu. Semua cerita dimulai dari satu film.
+          </p>
+
+          <a
+            class="font-inter jelajahi-film btn-solid theme-primary btn-lg"
+            href="login.php"
+            >Jelajahi Film <span aria-hidden="true">&rarr;</span></a
+          >
+
+          <p class="teks-beranda font-inter text-sm fg-2 mt-5 mb-0">
+            Temukan tontonan. Bagikan sudut pandang.
+          </p>
+        </div>
+
+        <div class="col-12 lg:col-6">
+
+          <div
+            id="carouselStacked"
+            class="carousel slide"
+            data-bs-autoplay="true"
+            data-bs-interval="2000"
+            aria-label="Pilihan film TMDB"
+          >
+            <div
+              class="d-flex justify-content-between align-items-center mb-3"
+            ></div>
+
+            <div class="carousel-inner rounded-5 border">
+              <div class="carousel-item active">
+                <img
+                  src="https://image.tmdb.org/t/p/w1280/eZ239CUp1d6OryZEBPnO2n87gMG.jpg"
+                  class="d-block w-100"
+                  alt="Cuplikan Dune: Part Two"
+                  width="1280"
+                  height="720"
+                />
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="https://image.tmdb.org/t/p/w1280/8sNiAPPYU14PUepFNeSNGUTiHW.jpg"
+                  class="d-block w-100"
+                  alt="Cuplikan Interstellar"
+                  width="1280"
+                  height="720"
+                />
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="https://image.tmdb.org/t/p/w1280/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg"
+                  class="d-block w-100"
+                  alt="Cuplikan Inception"
+                  width="1280"
+                  height="720"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-1 border-top px-7 lg:px-12 py-7 d-flex flex-column md:flex-row justify-content-between md:align-items-center gap-5"
+    >
+      <div>
+        <a
+          class="logo-situs text-xl fw-bold fg-body text-decoration-none"
+          href="index.html"
+          >Sinempak<span class="fg-primary">.</span></a
+        >
+
+        <p class="text-sm fg-2 mt-1 mb-0">
+          Ruang untuk film dan pendapat.
+        </p>
+      </div>
+
+      <p class="text-sm fg-2 mb-0">
+        &copy; 2026 Sinempak. Semua hak dilindungi.
+      </p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

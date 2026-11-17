@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html lang="id" data-bs-theme="dark">
+
+<head>
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Masuk — Sinempak</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="assets/css/style.css?v=5" />
+
+  <link href="assets/css/fonts.css?v=6" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <main
+    class="container-fluid flex-grow-1 d-flex align-items-center justify-content-center py-12 px-7">
+    <div class="row justify-content-center w-100">
+      <section
+        class="col-12 md:col-8 lg:col-5 xl:col-4"
+        aria-labelledby="account-title">
+        <div class="card bg-2">
+          <div class="card-body p-7 md:p-9">
+            <a class="btn-outline theme-secondary" href="index.html">&larr; Kembali ke Beranda</a>
+
+            <h1 class="text-2xl fw-bold mt-7 mb-5" id="account-title">
+              Selamat datang kembali.
+            </h1>
+
+            <p class="font-inter fg-2 mb-7">
+              Temukan tontonan dan bagikan pendapatmu.
+            </p>
+
+            <?php if (isset($_GET['error'])) { ?>
+              <p class="fg-primary" role="alert"><?php
+                                                  if ($_GET['error'] == 'expired') echo 'Sesi 5 menit telah berakhir. Silakan masuk kembali.';
+                                                  else echo 'Username atau password salah.';
+                                                  ?></p>
+            <?php } ?>
+
+            <form action="process/login_proses.php" method="post">
+              <div class="mb-5">
+                <label class="form-label" for="username">Username</label>
+
+                <input
+                  class="form-control"
+                  id="username"
+                  name="username"
+                  type="text"
+                  autocomplete="username"
+                  required />
+              </div>
+
+              <div class="mb-5">
+                <label class="form-label" for="password">Password</label>
+
+                <div class="input-group">
+                  <input
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    type="password"
+                    autocomplete="current-password"
+                    required />
+
+                  <button
+                    class="btn-outline theme-secondary input-group-btn" id="tombol-password" onclick="lihatPassword()"
+                    type="button"
+                    aria-controls="password"
+                    aria-pressed="false"
+                    aria-label="Lihat password">
+                    Lihat
+                  </button>
+                </div>
+              </div>
+
+              <button
+                class="btn-solid theme-primary w-100 mt-3"
+                type="submit">
+                Masuk
+              </button>
+            </form>
+
+            <p class="mt-5 mb-0">
+              Belum punya akun? <a href="register.php">Daftar sekarang</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+    crossorigin="anonymous"></script>
+
+  <script src="assets/js/password.js"></script>
+
+</body>
+
+</html>

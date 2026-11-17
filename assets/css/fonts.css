@@ -1,0 +1,17 @@
+
+:root {
+    --font-teks: system-ui, "Segoe UI", Arial, sans-serif;
+    --font-judul: system-ui, "Segoe UI", Arial, sans-serif;
+    --font-logo: Georgia, "Times New Roman", serif;
+}
+
+.navbar-brand, .logo-situs {
+    font-family: var(--font-logo) !important;
+    font-weight: 600 !important;
+}
+.font-inter, .halaman-beranda main p, .halaman-beranda main a {
+    font-family: var(--font-teks) !important;
+}
+#hero-title, #judul-katalog, .film-title {
+    font-family: var(--font-judul) !important;
+}

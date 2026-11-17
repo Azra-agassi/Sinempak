@@ -1,0 +1,169 @@
+
+
+[data-bs-theme="dark"] {
+  --bs-body-bg: #0b1324;
+
+  --bs-body-color: #dbe3f5;
+
+  --bs-body-font-family: system-ui, "Segoe UI", Arial, sans-serif;
+
+  --bs-secondary-color: #a6b1c5;
+
+  --bs-border-color: #2b364b;
+
+  --bs-tertiary-bg: #162136;
+
+  --bs-link-color-rgb: 147, 197, 253;
+
+  --bs-link-hover-color-rgb: 191, 219, 254;
+}
+
+body {
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1240px;
+}
+
+.navbar,
+footer {
+  background-color: #070f1f;
+}
+
+.navbar-brand,
+.hero-title {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 3.4vw, 2.9rem);
+  line-height: 1.25;
+}
+
+.card {
+  --bs-card-bg: #131e32;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.poster {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.poster-kosong {
+  aspect-ratio: 2 / 3;
+  background-color: #1b2940;
+}
+
+.form-control,
+.form-select {
+  background-color: #0b1426;
+  border-color: #334158;
+  font-size: 0.8125rem;
+}
+
+.form-label {
+  font-size: 0.75rem;
+  color: #b7c3d9;
+}
+
+.film-title {
+  font-size: 0.8125rem;
+  line-height: 1.55;
+}
+
+.review-text {
+  color: #bac5d9;
+  overflow-wrap: anywhere;
+}
+
+.btn-primary {
+  --bs-btn-bg: #2563eb;
+  --bs-btn-border-color: #2563eb;
+}
+
+.tagline {
+  color: #b6c9ff;
+  background-color: #1d2a45;
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+}
+
+.search-icon {
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+}
+
+.browse-panel .form-label {
+  display: block;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.browse-panel .form-select,
+.browse-panel .form-control,
+.browse-panel .input-group > .btn {
+  height: 34px;
+}
+
+.browse-panel .input-group {
+  align-items: stretch;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.film-card {
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.film-card > a {
+  overflow: hidden;
+}
+
+.film-card .poster {
+  transition: transform 0.2s;
+}
+
+.film-card:hover,
+.film-card:focus-within {
+  border-color: #3b82f6;
+
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.film-card:hover .poster,
+.film-card:focus-within .poster {
+  transform: scale(1.05);
+}
+
+.film-title {
+  font-weight: 800 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .film-card,
+  .film-card .poster {
+    transition: none;
+  }
+
+  .film-card:hover .poster,
+  .film-card:focus-within .poster {
+    transform: none;
+  }
+}

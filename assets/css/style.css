@@ -1,0 +1,31 @@
+
+
+:root {
+  --bs-bg-body: #0f172a; 
+  --bs-bg-1: #020617; 
+  --bs-bg-2: #162238; 
+  --bs-fg-body: #f8fafc; 
+  --bs-fg-2: #cbd5e1; 
+  --bs-border-color: #334155;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+.jelajahi-film:hover,
+.jelajahi-film:focus-visible {
+  background: #d1d5db;
+  border-color: #d1d5db;
+  color: #000;
+}
+
+#carouselStacked .carousel-item img {
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: cover;
+}
+
+.halaman-beranda .teks-beranda {
+  font-weight: 500;
+}
